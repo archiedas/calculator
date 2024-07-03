@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .container {
+
+            display: grid;
+            border-radius: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-auto-rows: 80px;
+            width: 450px;
+            height: 420px;
+            background-color: black;
+
+        }
+
+        .item {
+            border-radius: 10px;
+            height: 70px;
+            width: 100px;
+            font-size: x-large;
+            margin: 2px;
+            background-color: antiquewhite;
+        }
+
+        .screen {
+            background-color: rgb(107, 114, 114);
+            height: 70px;
+            border-radius: 10px;
+            width: auto;
+            margin: 10px;
+            font-size: xx-large;
+            text-align: end;
+            margin-bottom:10px ;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        #item-16 {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(101, 157, 101);">
+    <div class="container">
+        <div class="screen">0</div>
+        <button class="item">7</button>
+        <button class="item">8</button>
+        <button class="item">9</button>
+        <button class="item">/</button>
+        <button class="item">4</button>
+        <button class="item">5</button>
+        <button class="item">6</button>
+        <button class="item">x</button>
+        <button class="item">1</button>
+        <button class="item">2</button>
+        <button class="item">3</button>
+        <button class="item">-</button>
+        <button class="item">0</button>
+        <button class="item">.</button>
+        <button class="item">+</button>
+        <button class="item" id="item-16">=</button>
+
+    </div>
+</body>
+
+</html>
